@@ -1,0 +1,85 @@
+.searchbox {
+  position: relative;
+  /*margin-left: 5rem;*/
+}
+.search {
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  height: 5rem;
+  width: 40rem;
+  font-size: 1.7rem;
+  text-indent: 1rem;
+  color: rgb(55, 65, 61);
+}
+.search-btn {
+  height: 5rem;
+  width: 10rem;
+  background-color: rgb(21, 33, 63);
+  border-radius: 0 5px 5px 0;
+  border: 1px solid rgb(21, 33, 63);
+  font-size: 1.3rem;
+  position: absolute;
+  color: rgb(235, 236, 240);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.search-btn:hover {
+  color: rgb(199, 199, 199);
+}
+.clear-btn {
+  color: rgb(235, 236, 240);
+  background-color: rgb(61, 68, 81);
+  border: 1px solid rgb(61, 68, 81);
+  position: absolute;
+  font-size: 1.5rem;
+  left: 53rem;
+  top: 1.3rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.clear-btn:hover {
+  color: rgb(199, 199, 199);
+}
+.align {
+  margin-top: 4rem;
+}
+@media screen and (max-width: 1050px) {
+  .search {
+    height: 4rem;
+    width: 35rem;
+    font-size: 1.5rem;
+  }
+  .search-btn {
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.2rem;
+  }
+  .clear-btn {
+    left: 45rem;
+    top: 1rem;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .search-btn {
+    width: 5rem;
+    height: 2.7rem;
+    font-size: 1rem;
+  }
+  .search {
+    height: 2.7rem;
+    width: 15rem;
+    font-size: 0.8rem;
+  }
+  .clear-btn {
+    left: 21rem;
+    top: 0.6rem;
+    font-size: 1rem;
+  }
+  .align {
+    margin-top: 3rem;
+  }
+}

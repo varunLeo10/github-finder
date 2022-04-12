@@ -1,0 +1,52 @@
+.app__notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.app__notfound div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  background-color: rgb(73, 48, 184);
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+.button:hover {
+  background-color: rgb(67, 31, 231);
+}
+h1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+.app__notfound div p {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .app__notfound div p {
+    font-size: 2rem;
+  }
+  .button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .button {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+}

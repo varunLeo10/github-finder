@@ -1,0 +1,328 @@
+main > a {
+  display: block;
+  width: max-content;
+  margin-top: 2rem;
+  position: relative;
+  font-size: 1.7rem;
+  padding: 1.3rem;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+main > a:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease;
+}
+main > a:hover {
+  color: rgba(216, 215, 215, 0.877);
+}
+main > a:hover:after {
+  background: rgba(216, 215, 215, 0.877);
+}
+.user__profile {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user__profile > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 2rem;
+  row-gap: 3rem;
+}
+.user__img {
+  width: 22rem;
+  height: 22rem;
+  object-fit: cover;
+  position: relative;
+  margin-right: 2rem;
+}
+.user__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.9rem;
+  opacity: 0.6;
+}
+.login__name {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  transform: translate(-15%, 10%);
+}
+.login__name h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.login__name p {
+  font-size: 1rem;
+}
+.user__details {
+  display: flex;
+  flex-direction: column;
+  min-width: 24rem;
+}
+.user__details-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.user__details-heading p {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+.user__details-heading button {
+  font-size: 1rem;
+  margin-right: 2rem;
+  color: rgb(54, 255, 4);
+  background-color: rgba(27, 255, 6, 0.151);
+  border: 1px solid rgba(27, 255, 6, 0.151);
+  border-radius: 10px;
+  padding: 0.1rem 2rem;
+}
+.user__details > p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.github_profile_link_btn {
+  padding: 1.3rem 3rem;
+  border-radius: 5px;
+  width: max-content;
+  font-size: 1.2rem;
+  border: 1px solid grey;
+  box-shadow: 0px 6px 5px rgba(54, 54, 54, 0.822);
+  transition: all 0.5s ease;
+}
+.github_profile_link_btn:hover {
+  color: rgba(216, 215, 215, 0.877);
+}
+.user_profile {
+  padding: 1rem 1.7rem;
+  box-shadow: 0px 5px 10px 1px rgba(54, 54, 54, 0.822);
+  width: max-content;
+  margin-top: 2rem;
+}
+.user_profile-det {
+  padding: 1rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user_profile-det h2,
+.user_profile-det a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+.user_profile-det a:hover {
+  color: rgba(216, 215, 215, 0.877);
+}
+.user_profile-det p {
+  font-size: 1.2rem;
+  color: rgb(173, 171, 171);
+}
+.reach {
+  grid-column: 1/-1;
+  display: flex;
+  box-shadow: 0px 5px 10px 1px rgba(54, 54, 54, 0.822);
+  padding: 1rem 1.7rem;
+}
+.github_stats {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.7rem;
+}
+.reach h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.reach p {
+  font-size: 1.2rem;
+  color: rgb(173, 171, 171);
+}
+.reach svg {
+  font-size: 4rem;
+}
+@media screen and (max-width: 900px) {
+  main > a {
+    font-size: 1.5rem;
+  }
+  .user__profile > div {
+    grid-template-columns: 1fr 2fr;
+  }
+  .user__img {
+    width: 20rem;
+    height: 20rem;
+    margin-right: 2rem;
+  }
+  .user__details-heading p {
+    font-size: 2rem;
+  }
+  .user__details-heading button {
+    font-size: 0.7rem;
+  }
+  .reach {
+    padding: 1rem 1.4rem;
+  }
+  .user_profile {
+    padding: 1rem 1.4rem;
+  }
+  .user_profile-det h2,
+  .user_profile-det a {
+    font-size: 1.1rem;
+  }
+  .user_profile-det p {
+    font-size: 0.9rem;
+  }
+  .user__details > p {
+    font-size: 1.2rem;
+  }
+  .github_profile_link_btn {
+    font-size: 1rem;
+  }
+  .reach p {
+    font-size: 1rem;
+  }
+  .reach h2 {
+    font-size: 2rem;
+  }
+  .reach svg {
+    font-size: 3rem;
+  }
+  .repositories h2 {
+    font-size: 1.7rem;
+  }
+  .repo_item a,
+  .repo_item svg {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  main > a {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  .login__name h2 {
+    font-size: 0.8rem;
+  }
+  .login__name p {
+    font-size: 0.6rem;
+  }
+  .user__profile > div {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 0.5rem;
+  }
+  .user__img {
+    width: 15rem;
+    height: 15rem;
+    margin-right: 1rem;
+  }
+  .reach {
+    padding: 0.6rem 1rem;
+  }
+  .user_profile {
+    padding: 0.6rem 0.6rem;
+    margin-top: 0.8rem;
+  }
+  .user_profile-det {
+    padding: 0.6rem 0.8rem;
+  }
+  .user_profile-det h2,
+  .user_profile-det a {
+    font-size: 0.6rem;
+  }
+  .user_profile-det p {
+    font-size: 0.5rem;
+  }
+  .user__details-heading p {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+  .user__details-heading button {
+    font-size: 0.6rem;
+    margin-right: 0.5rem;
+    padding: 0.1rem 1.2rem;
+  }
+  .user__details > p {
+    font-size: 0.8rem;
+  }
+  .github_profile_link_btn {
+    font-size: 0.7rem;
+    padding: 0.7rem 1.8rem;
+  }
+  .reach p {
+    font-size: 0.7rem;
+  }
+  .reach h2 {
+    font-size: 1rem;
+  }
+  .reach svg {
+    font-size: 1.1rem;
+  }
+  .github_stats {
+    padding: 0.6rem 0.8rem;
+  }
+  .repositories {
+    padding: 1rem 1.4rem;
+    margin: 1rem 0;
+  }
+  .repositories h2 {
+    font-size: 1.2rem;
+  }
+  .repo_item {
+    padding: 1rem 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  .repo_stats div {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.3rem;
+  }
+  .repo_item a,
+  .repo_item svg {
+    font-size: 0.9rem;
+  }
+  .repo_stats div {
+    margin-top: 0.6rem;
+    font-size: 0.6rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .user__img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .user__profile > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 300px) {
+  .user__profile > div {
+    grid-template-columns: 1fr;
+  }
+  .reach p {
+    font-size: 0.5rem;
+  }
+  .reach h2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .reach svg {
+    font-size: 0.9rem;
+  }
+  .github_stats {
+    padding: 0.4rem 0.6rem;
+  }
+  .reach {
+    padding: 0.2rem 0.5rem;
+  }
+}
